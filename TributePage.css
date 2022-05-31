@@ -1,0 +1,1230 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #16022d;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    text-align: left;
+    background-color: #320969;
+    list-style: none;
+    display: inline-block;
+    margin-left: 0;
+    width: 100%;
+    height: 3.3em;
+    font-family: Koulen;
+    cursor: default;
+    text-align: center;
+}
+
+.top-nav a {
+    color: #ea4fe7;
+    padding: 6px 3.3em;
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+
+.top-nav span:hover {
+    color: #9b4899;
+    cursor: pointer;
+}
+
+#background-page img {
+    position: fixed;
+    width: 40em;
+    height: 51em;
+    filter: brightness(0.91);
+}
+
+#background-page #title{
+    position: fixed;
+    color: #f2f2f2;
+    left: 17.3em;
+    top: 4.6em;
+    margin: 0 auto;
+    font-size: 52px;
+    font-family: Koulen;
+    overflow: hidden;
+    
+}
+
+#Information {
+    background-color: #361878;
+    position: relative;
+    top: 50rem;
+    height: 75rem;
+    z-index: 0;
+    margin: auto;
+    width: 100%;
+}
+
+#Information .cover-info{
+    background-color: #7736cd;
+    position: relative;
+    top: 1.3em;
+    height: 90%;
+    margin: 1.1em;
+    border-radius: 1.3em;
+}
+
+#Information .cover-info img{
+    position: relative;
+    top: 4.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 21em;
+    height: 25em;
+    border: 10px solid;
+    border-color: #401875;
+}
+
+#Information .info-title{
+    position: relative;
+    top: 0.5em;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 4em;
+    margin: auto;
+    text-align: center;
+}
+
+#Information .context{
+    position: relative;
+    color: #ffffff;
+    top: 6em;
+    left: -2.5em;
+    white-space: pre;
+    word-wrap: break-word;
+    font-family: Poppins;
+    font-size: 1.1em;
+    margin: auto;
+    text-align: center;
+}
+
+#Author{
+    background-color: #361878;
+    position: relative;
+    top: 46rem;
+    height: 86rem;
+    z-index: 0;
+}
+
+#Author .author-info{
+    background-color: #7736cd;
+    position: relative;
+    top: 4em;
+    height: 89%;
+    margin: 1.1em;
+    border-radius: 1.3em;
+}
+
+#Author .author-title{
+    position: relative;
+    top: 0.5em;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 4em;
+    margin: auto;
+    text-align: center;
+}
+
+#Author .author-info img{
+    position: relative;
+    top: 4.3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 21em;
+    height: 25em;
+    border: 10px solid;
+    border-color: #401875;
+}
+
+#Author .author-info .context{
+    position: relative;
+    color: #ffffff;
+    top: 5em;
+    left: -3.6em;
+    white-space: pre;
+    font-family: Poppins;
+    font-size: 1.1em;
+    margin: auto;
+    text-align: center;
+}
+
+#Works{
+    background-color: #361878;
+    position: relative;
+    top: 44rem;
+    height: 80rem;
+    z-index: 0;
+}
+
+#Works .works-info{
+    background-color: #7736cd;
+    position: relative;
+    top: 2.5em;
+    height: 89%;
+    margin: 1.1em;
+    border-radius: 1.3em;
+}
+
+#Works .works-title{
+    position: relative;
+    top: 0.5em;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 4em;
+    margin: auto;
+    text-align: center;
+}
+
+#Works .align-center-works{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Works .works-info .OPM-main-flip .OPM-flip .OPM-flip-front img{
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18.3em;
+    height: 27em;
+}
+
+#Works .works-info .OPM-main-flip{
+    position: inherit;
+    top: 4em;
+    left: -33em;
+    background-color: transparent;
+    width: 18.3em;
+    height: 27em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Works .works-info .OPM-main-flip .OPM-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Works .works-info .OPM-main-flip:hover .OPM-flip{
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .OPM-main-flip .OPM-flip .OPM-flip-front, #Works .works-info .OPM-main-flip .OPM-flip .OPM-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Works .works-info .OPM-main-flip .OPM-flip .OPM-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .OPM-main-flip .OPM-flip .OPM-flip-back .OPM-content{
+    position: relative;
+    left: -9em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Works .works-info .GB-main-flip .GB-flip .GB-flip-front img{
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 36.6em;
+    height: 27em;
+}
+
+#Works .works-info .GB-main-flip{
+    position: inherit;
+    top: -23em;
+    left: -0.3em;
+    background-color: transparent;
+    width: 36.6em;
+    height: 27em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Works .works-info .GB-main-flip .GB-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Works .works-info .GB-main-flip:hover .GB-flip{
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .GB-main-flip .GB-flip .GB-flip-front, #Works .works-info .GB-main-flip .GB-flip .GB-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Works .works-info .GB-main-flip .GB-flip .GB-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .GB-main-flip .GB-flip .GB-flip-back .GB-content{
+    position: relative;
+    left: -9em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 14px;
+    white-space: pre;
+}
+
+#Works .works-info .MNO-main-flip .MNO-flip .MNO-flip-front img{
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18.7em;
+    height: 27em;
+}
+
+#Works .works-info .MNO-main-flip{
+    position: inherit;
+    top: -49.9em;
+    left: 32em;
+    background-color: transparent;
+    width: 18.7em;
+    height: 27em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Works .works-info .MNO-main-flip .MNO-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Works .works-info .MNO-main-flip:hover .MNO-flip{
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .MNO-main-flip .MNO-flip .MNO-flip-front, #Works .works-info .MNO-main-flip .MNO-flip .MNO-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Works .works-info .MNO-main-flip .MNO-flip .MNO-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .MNO-main-flip .MNO-flip .MNO-flip-back .MNO-content{
+    position: relative;
+    left: -9em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Works .works-info .DNY-main-flip .DNY-flip .DNY-flip-front img{
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18.62em;
+    height: 24.69em;
+}
+
+#Works .works-info .DNY-main-flip{
+    position: inherit;
+    top: -46em;
+    left: -32.9em;
+    background-color: transparent;
+    width: 18.8em;
+    height: 24.9em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Works .works-info .DNY-main-flip .DNY-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Works .works-info .DNY-main-flip:hover .DNY-flip{
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .DNY-main-flip .DNY-flip .DNY-flip-front, #Works .works-info .DNY-main-flip .DNY-flip .DNY-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Works .works-info .DNY-main-flip .DNY-flip .DNY-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .DNY-main-flip .DNY-flip .DNY-flip-back .DNY-content{
+    position: relative;
+    left: -9em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Works .works-info .Reigen-main-flip .Reigen-flip .Reigen-flip-front img{
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17.6em;
+    height: 24.8em;
+}
+
+#Works .works-info .Reigen-main-flip{
+    position: inherit;
+    top: -70.9em;
+    left: -9.8em;
+    background-color: transparent;
+    width: 17.6em;
+    height: 24.8em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Works .works-info .Reigen-main-flip .Reigen-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Works .works-info .Reigen-main-flip:hover .Reigen-flip{
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .Reigen-main-flip .Reigen-flip .Reigen-flip-front, #Works .works-info .Reigen-main-flip .Reigen-flip .Reigen-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Works .works-info .Reigen-main-flip .Reigen-flip .Reigen-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Works .works-info .Reigen-main-flip .Reigen-flip .Reigen-flip-back .Reigen-content{
+    position: relative;
+    left: -9em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters{
+    background-color: #361878;
+    position: relative;
+    top: 41rem;
+    height: 82rem;
+    z-index: 0;
+}
+
+#Characters .char-info{
+    background-color: #7736cd;
+    position: relative;
+    top: 2.5em;
+    height: 86%;
+    margin: 1.1em;
+    border-radius: 1.3em;
+}
+
+#Characters .char-title{
+    position: relative;
+    top: 0.5em;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 4em;
+    margin: auto;
+    text-align: center;
+}
+
+#Characters .align-center-chars{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -50em
+}
+
+#Characters .char-info .Mob-main-flip .Mob-flip .Mob-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 5.7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+    height: 24em;
+}
+
+#Characters .char-info .Mob-main-flip{
+    position: inherit;
+    top: 55em;
+    left: -34.5em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Mob-main-flip .Mob-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Mob-main-flip:hover .Mob-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Mob-main-flip .Mob-flip .Mob-flip-front, #Characters .char-info .Mob-main-flip .Mob-flip .Mob-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Mob-main-flip .Mob-flip .Mob-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Mob-main-flip .Mob-flip .Mob-flip-back .Mob-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Arataka-main-flip .Arataka-flip .Arataka-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 5.7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+    height: 24em;
+}
+
+#Characters .char-info .Arataka-main-flip{
+    position: inherit;
+    top: 29em;
+    left: -12em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Arataka-main-flip .Arataka-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Arataka-main-flip:hover .Arataka-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Arataka-main-flip .Arataka-flip .Arataka-flip-front, #Characters .char-info .Arataka-main-flip .Arataka-flip .Arataka-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Arataka-main-flip .Arataka-flip .Arataka-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Arataka-main-flip .Arataka-flip .Arataka-flip-back .Arataka-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Ekubo-main-flip .Ekubo-flip .Ekubo-flip-front img{
+    position: absolute;
+    top: 3.2em;
+    left: 2.6em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 14em;
+    height: 20em;
+}
+
+#Characters .char-info .Ekubo-main-flip{
+    position: inherit;
+    top: 3em;
+    left: 11.2em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Ekubo-main-flip .Ekubo-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Ekubo-main-flip:hover .Ekubo-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Ekubo-main-flip .Ekubo-flip .Ekubo-flip-front, #Characters .char-info .Ekubo-main-flip .Ekubo-flip .Ekubo-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Ekubo-main-flip .Ekubo-flip .Ekubo-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Ekubo-main-flip .Ekubo-flip .Ekubo-flip-back .Ekubo-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Ritsu-main-flip .Ritsu-flip .Ritsu-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9em;
+    height: 24em;
+}
+
+#Characters .char-info .Ritsu-main-flip{
+    position: inherit;
+    top: -23em;
+    left: 34em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Ritsu-main-flip .Ritsu-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Ritsu-main-flip:hover .Ritsu-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Ritsu-main-flip .Ritsu-flip .Ritsu-flip-front, #Characters .char-info .Ritsu-main-flip .Ritsu-flip .Ritsu-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Ritsu-main-flip .Ritsu-flip .Ritsu-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Ritsu-main-flip .Ritsu-flip .Ritsu-flip-back .Ritsu-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Teruki-main-flip .Teruki-flip .Teruki-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 3.7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    height: 24em;
+}
+
+#Characters .char-info .Teruki-main-flip{
+    position: inherit;
+    top: -20em;
+    left: -34.5em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Teruki-main-flip .Teruki-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Teruki-main-flip:hover .Teruki-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Teruki-main-flip .Teruki-flip .Teruki-flip-front, #Characters .char-info .Teruki-main-flip .Teruki-flip .Teruki-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Teruki-main-flip .Teruki-flip .Teruki-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Teruki-main-flip .Teruki-flip .Teruki-flip-back .Teruki-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Tsubomi-main-flip .Tsubomi-flip .Tsubomi-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 3.7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 11em;
+    height: 24em;
+}
+
+#Characters .char-info .Tsubomi-main-flip{
+    position: inherit;
+    top: -46em;
+    left: -12em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Tsubomi-main-flip .Tsubomi-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Tsubomi-main-flip:hover .Tsubomi-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Tsubomi-main-flip .Tsubomi-flip .Tsubomi-flip-front, #Characters .char-info .Tsubomi-main-flip .Tsubomi-flip .Tsubomi-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Tsubomi-main-flip .Tsubomi-flip .Tsubomi-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Tsubomi-main-flip .Tsubomi-flip .Tsubomi-flip-back .Tsubomi-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Keiji-main-flip .Keiji-flip .Keiji-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9em;
+    height: 24em;
+}
+
+#Characters .char-info .Keiji-main-flip{
+    position: inherit;
+    top: -72em;
+    left: 11.2em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Keiji-main-flip .Keiji-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Keiji-main-flip:hover .Keiji-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Keiji-main-flip .Keiji-flip .Keiji-flip-front, #Characters .char-info .Keiji-main-flip .Keiji-flip .Keiji-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Keiji-main-flip .Keiji-flip .Keiji-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Keiji-main-flip .Keiji-flip .Keiji-flip-back .Keiji-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Characters .char-info .Ryo-main-flip .Ryo-flip .Ryo-flip-front img{
+    position: absolute;
+    top: 1em;
+    left: 5.6em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    height: 24.5em;
+}
+
+#Characters .char-info .Ryo-main-flip{
+    position: inherit;
+    top: -98em;
+    left: 34em;
+    background-color: transparent;
+    width: 19em;
+    height: 26em;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+}
+
+#Characters .char-info .Ryo-main-flip .Ryo-flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+#Characters .char-info .Ryo-main-flip:hover .Ryo-flip{
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Ryo-main-flip .Ryo-flip .Ryo-flip-front, #Characters .char-info .Ryo-main-flip .Ryo-flip .Ryo-flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#Characters .char-info .Ryo-main-flip .Ryo-flip .Ryo-flip-back{
+    background-color: #35175d;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+#Characters .char-info .Ryo-main-flip .Ryo-flip .Ryo-flip-back .Ryo-content{
+    position: relative;
+    left: -9.4em;
+    bottom: 2em;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 12px;
+    white-space: pre;
+}
+
+#Fights{
+    background-color: #361878;
+    position: relative;
+    top: 37rem;
+    height: 90rem;
+    z-index: 0;
+}
+
+#Fights .fight-info{
+    background-color: #7736cd;
+    position: relative;
+    top: 2.5em;
+    height: 95%;
+    margin: 1.1em;
+    border-radius: 1.3em;
+}
+
+#Fights .fight-title{
+    position: relative;
+    top: 0.5em;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 4em;
+}
+
+#Fights .fight-info .Mob-vs-Ekubo{
+    position: relative;
+    top: 2.5em;
+    left: -30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+    
+}
+
+#Fights .fight-info .Mob-vs-Ekubo .Mob-vs-Ekubo-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Mob-vs-Teruki{
+    position: relative;
+    top: -19.6em;
+    left: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Mob-vs-Teruki .Mob-vs-Teruki-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Mob-vs-Koyama{
+    position: relative;
+    top: -41.7em;
+    left: 30.3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Mob-vs-Koyama .Mob-vs-Koyama-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Reigen-vs-7th-Division{
+    position: relative;
+    top: -40em;
+    left: -30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Reigen-vs-7th-Division .Reigen-vs-7th-Division-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Mob-vs-Mogami{
+    position: relative;
+    top: -62.1em;
+    left: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Mob-vs-Mogami .Mob-vs-Mogami-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Teruki-vs-Ryou{
+    position: relative;
+    top: -84.2em;
+    left: 30.3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Teruki-vs-Ryou .Teruki-vs-Ryou-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Ryou-vs-Everyone{
+    position: relative;
+    top: -83em;
+    left: -30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Ryou-vs-Everyone .Ryou-vs-Everyone-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Ryou-vs-Reigen{
+    position: relative;
+    top: -105.1em;
+    left: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Ryou-vs-Reigen .Ryou-vs-Reigen-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
+
+#Fights .fight-info .Mob-vs-Toichiro{
+    position: relative;
+    top: -127.2em;
+    left: 30.3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+}
+
+#Fights .fight-info .Mob-vs-Toichiro .Mob-vs-Toichiro-Vid{
+    position: relative;
+    top: -0.7em;
+    width: 26em;
+    height: 17em;
+    border: 8px outset #4e22ac;
+    display: block;
+    margin: 0 auto;
+}
